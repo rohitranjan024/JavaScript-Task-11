@@ -1,0 +1,79 @@
+body{
+    padding-top: 4%;
+    background: rgb(250,243,167);
+    background: radial-gradient(circle, rgba(250,243,167,1) 20%, rgba(235,204,255,1) 100%);
+}
+
+h2{
+    color: blue;
+    text-align: center;
+}
+
+.box{
+    width: 45%;
+    margin: 50px 500px;
+}
+
+.label{
+    float: right;
+    margin-right: 25px;
+}
+
+input[type=text], 
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=number],
+textarea{
+    width: 270px;
+}
+
+.btn{
+    width: 15%;
+    margin: auto 200px;
+}
+
+.btn button{
+  align-items: center;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 30px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}

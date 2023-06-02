@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Task 11</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <td><label class="label" for="firstName">First Name</label></td>
+          <td>
+            <input type="text" id="firstName" name="firstName" required>
+            <span id="firstNameStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="lastName">Last Name</label></td>
+          <td>
+            <input type="text" id="lastName" name="lastName" required>
+            <span id="lastNameStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="email">Email</label></td>
+          <td>
+            <input type="email" id="email" name="email" required>
+            <span id="emailStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="password">Password</label></td>
+          <td>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="rpassword">Re-enter Password</label></td>
+          <td>
+            <input type="password" id="rpassword" name="rpassword" required>
+            <span id="rpasswordStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label">Gender</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <span id="genderStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="age">Age</label></td>
+          <td>
+            <input type="number" id="age" name="age" required>
+            <span id="ageStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="phone">Phone Number</label></td>
+          <td>
+            <input type="tel" id="phone" name="phone" required>
+            <span id="phoneStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="address">Address</label></td>
+          <td>
+            <textarea type="text" rows="3" id="address" name="address" required></textarea>
+            <span id="addressStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="state">State</label></td>
+          <td>
+            <input type="text" id="state" name="state" required>
+            <span id="stateStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label" for="country">Country</label></td>
+          <td>
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Choose your country</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Canada">Canada</option>
+            </select>
+            <span id="countryStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="label">Languages Known</label></td>
+          <td>
+            <input type="checkbox" id="english" name="languagesKnown" value="English">
+            <label for="english">English</label>
+            <input type="checkbox" id="kannada" name="languagesKnown" value="Kannada">
+            <label for="kannada">Kannada</label>
+            <input type="checkbox" id="hindi" name="languagesKnown" value="Hindi">
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="telugu" name="languagesKnown" value="Telugu">
+            <label for="telugu">Telugu</label>
+            <span id="languagesKnownStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" id="declaration" required>
+            <label for="declaration">Hereby I declare all the given details are true</label>
+            <span id="declarationStatus" class="status"></span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p style="text-align: right;">Log in to
+              <a href="https://ethnus.com/">Ethnus</a> website
+            </p>
+          </td>
+        </tr>
+      </table>
+      <div class="btn">
+        <button type="submit" onclick="validateForm()">Register</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
